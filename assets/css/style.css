@@ -77,10 +77,10 @@ textarea {
  }
  .setEvent{
   position: relative;
-  bottom: -1%;
+  bottom: -4%;
  }
   .UpcomingEvent {
-    min-height: 45vh;
+    min-height: 400px;
     width: 300px;
     /* background-color: var(--bg-main); */
     background: white;
@@ -91,13 +91,17 @@ textarea {
     overflow: auto;
   }
   .UpcomingEventButton {
-    background-color: var(--ic--);
+    background-color: #BF4E03;
     width: 100%;
-    border: 1px solid var(--ic--);
+    border: 1px solid #BF4E03;
     border-radius: 5px;
     padding: .2rem 0;
     margin-top: 20px;
     color: #fff !important;
+  }
+  .UpcomingEventButton:hover
+  {
+    background-color: #a34404; 
   }
   .comingEvent {
     text-align: center;
@@ -108,21 +112,20 @@ textarea {
   }
   .comingEvent p {
     overflow: auto;
-    height: 16vh;
-    max-height: 16vh;
-    overflow: auto;
-    color: #fff !important;
+    height: 100px ;
+    /* color: #fff !important; */
   }
 
   .EventBox {
     margin: auto;
-      margin-top: auto;
+      
     margin-top: 5vh;
-    width: 90%;
+    width: 98%;
+
     border: 1px transparent;
     border-radius: 10px;
     background: var(--tableBackground--);
-    padding: 1.5%;
+    padding: 30px;
   }
 .ReportItems{
   width: 100%;
@@ -138,13 +141,17 @@ textarea {
   margin-top: 50px ;
   width: 120px;
   height: 120px;
-  border: 1px solid black;
+
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ReportItems figure img
 {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #e5e4e4;
 }
 .ReportItems .button
 {

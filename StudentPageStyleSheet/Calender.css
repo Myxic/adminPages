@@ -72,7 +72,7 @@ body {
 }
 #year,
 pre{
-    color: #fff !important; 
+    color: var(--bs-dark)!important; 
 }
 
 .calendar-body {
@@ -89,7 +89,7 @@ pre{
 .calendar-week-day div {
     display: grid;
     place-items: center;
-    color: var(--bg-second);
+    color: var(--bs-gray);
 }
 
 .calendar-days {
@@ -180,9 +180,11 @@ pre{
 
 .calendar-days div.curr-date,
 .calendar-days div.curr-date:hover {
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
+    background-color: #BF4E03;
     color: var(--white);
-    border-radius: 50%;
+    border-radius: 3px;
+    /* border-radius: 50%; */
 }
 
 .calendar-days div.curr-date span {
@@ -193,7 +195,7 @@ pre{
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
-    color: #fff;
+    color: var(--bs-dark);
 }
 
 .month-picker:hover {
@@ -215,8 +217,11 @@ pre{
     cursor: pointer;
 }
 
-.year-change:hover {
-    background-color: var(--color-hover);
+.year-change:hover  {
+    background-color: var(--dark-hover);
+}
+    .year-change:hover pre{
+    color: var(--bs-light) !important;
 }
 
 .calendar-footer {
