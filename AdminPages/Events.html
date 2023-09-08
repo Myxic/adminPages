@@ -130,41 +130,20 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="../index.html">
           <i class="bi bi-house-fill"></i>
           <span>General</span>
         </a>
       </li><!-- End General Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
-          <i class="bi bi-gear-fill"></i>
-          <span>Setting</span>
-        </a>
-      </li><!-- End Setting Nav --> 
+      
 
     
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bx bxs-grid-alt"></i><span>Pages</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="./Pages/Home.html">
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Pages/Gallery.html">
-              </i><span>Gallery</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
+     
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link " href="./Events.html">
           <i class="bi bi-calendar-event"></i>
           <span>Event</span>
         </a>
@@ -172,12 +151,7 @@
 
     
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
-          <i class="bi bi-cash-stack"></i>
-          <span>Rent</span>
-        </a>
-      </li><!-- End Setting Nav --> 
+      
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="./Reports.html">
@@ -188,28 +162,6 @@
 
       
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-people-fill"></i><span>Students</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="./Students/Active.html">
-              <span>Active</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Students/Update.html">
-              <span>Update</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Students/Records.html">
-              <span>Records</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
 
       <li class="nav-item signOut" >
         <a class="nav-link collapsed" href="../Index.html">
@@ -254,7 +206,7 @@
               </div>
               <div class="month-list"></div>
 
-              <button type="button" class="UpcomingEventButton setEvent">Set an Event</button>
+              <button type="button" class="UpcomingEventButton setEvent" id="addEventModal">Set an Event</button>
           </div>
           <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
               <h2>Upcoming Event</h2>
@@ -289,10 +241,19 @@
               aliquam blandit. Donec integer...</p>
           <button type="button" class="UpcomingEventButton">View</button>
       </div>
+
+      <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
+        
+        <button type="button" class="UpcomingEventButton" id="addADModal"><i class="bi bi-plus"></i>
+        <p>Add Advertisement</p></button>
+
+        
+    </div>
+
       </div>
   </div>
 
-  <dialog>
+  <dialog id="eventsModal">
    
       <form action="" class="FormContent">
         <h3>Add Events</h3>
@@ -302,15 +263,37 @@
         <input type="text" placeholder="Enter Header" id="headerInput">
         <label for="bodyDetail">Details</label>
         <textarea name="details" id="bodyDetail" cols="30" rows="10"></textarea>
+
         <input type="submit" class="formContentButton Save" value="Save">
-        <input type="button" class="formContentButton Cancel" value="Cancel">
-        <!-- <button type="button" class="formContentButton Cancel">Cancel</button> -->
-        <!-- <button type="submit" class="formContentButton Save">Save</button> -->
+        <input type="button" class="formContentButton Cancel" id="closeEventModal" value="Cancel">
+        
       </form>
     
  
 
   </dialog>
+
+  <dialog id="adModel">
+   
+    <form action="" class="FormContent AD">
+      <h3>Add Events</h3>
+      <label for="setdate">Set Date Duration</label>
+      <input type="date" name="setDate" id="setdate" >  
+      <label for="headerInput">AD Heading</label>
+      <input type="text" placeholder="Enter Header" id="headerInput">
+      <label for="ADImg"></label>
+      <input type="text" name="img" id="ADImg" placeholder="Link for Image">
+      <label for="bodyDetail">Details</label>
+      <textarea name="details" id="bodyDetail" cols="30" rows="10"></textarea>
+
+      <input type="submit" class="formContentButton Save" value="Save">
+      <input type="button" class="formContentButton Cancel" id="closeADmodel" value="Cancel">
+      
+    </form>
+  
+
+
+</dialog>
     
   </main>
 
@@ -321,8 +304,10 @@
 
 
   <!-- Template Main JS File -->
+  <script src="../assets/js/variables.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../scripts/Calendar.js" ></script>
+  <script src="../assets/js/event.js"></script>
 
 </body>
 

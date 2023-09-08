@@ -13,8 +13,14 @@ textarea {
   padding: 20px;
   border: 1px solid ;
   border-radius: 10px;
-
+  transform: translateY(20%);
   background: #f8fbff;
+}
+@media (max-width: 768px) {
+  .FormContent{
+    width: 90%;
+    transform: translateY(2%);
+  }
 }
 .FormContent h3
 {
@@ -76,8 +82,9 @@ textarea {
   margin: auto;
  }
  .setEvent{
-  position: relative;
-  bottom: -4%;
+  position: absolute;
+  bottom: 60px;
+  width: 90% !important;
  }
   .UpcomingEvent {
     min-height: 400px;
@@ -89,6 +96,7 @@ textarea {
     border-radius: 10px;
     padding: 1rem;
     overflow: auto;
+    position: relative;
   }
   .UpcomingEventButton {
     background-color: #BF4E03;
@@ -162,12 +170,142 @@ textarea {
   color: black;
   border-radius: 6px ;
   padding: 3px 5px;
+  cursor: pointer;
 }
+
+.ReportItems .button:hover
+{
+  background: #f9d05d; 
+}
+
+
+.AD{
+  transform: translateY(10%);
+}
+
+#addADModal{
+  background: none;
+  color:  #BF4E03 !important;
+  border: none;
+}
+#addADModal i{
+  font-size: 1000%;
+  color:  #BF4E03 !important;
+}
+
+
+/*--------------------------------------------------------------
+# Modals Page starts --------------------------------
+--------------------------------------------------------------*/
+
+dialog{
+  width: 100vw !important;
+  height: 100vh;
+  box-sizing: content-box;
+  background-color: rgb(245, 245, 240);
+
+}
+
+.reportmodal{
+  background-color:rgb(234, 234, 230); 
+  margin:10px auto;
+  width: 90%;
+  height: 90%;
+  border: 1px solid rgba(255, 255, 255,0.2);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.tablePacer{
+  display: flex;
+  flex-direction: column; 
+}
+.reportmodal h3{
+  text-decoration: underline;
+}
+.reportmodal p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  right: 1%;
+}
+
+.reportmodal table tr th,
+.reportmodal table tr td{
+  padding: 10px;
+  
+}
+
+
+
+.reportmodal input[type="button"]{
+  position: absolute;
+  width: 100px !important;
+  
+}
+
+.reportmodal .Reset{
+  background-color: #FEDA75;
+  color: black !important;
+  border: 1px solid #FEDA75;
+
+  bottom:30px;
+}
+
+.reportmodal .Delete{
+  bottom:30px; 
+  left: 150px;
+}
+
+.reportmodal .Reset:hover{
+  background: #f9d05d;  
+}
+
+.reportmodal .Xbutton:hover{
+    background-color: #2c384e;
+
+}
+
+@media (max-width: 767px) {
+
+
+  .tablePacer{
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  .reportmodal table tr{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border: 1px solid ;
+    border-radius: 8px;
+  }
+
+
+#adminModal .FormContent{
+  transform: translateY(30%) !important;
+}
+  
+}
+
+
+#adminModal .FormContent{
+  transform: translateY(50%) ;
+}
+
+
 
 /*--------------------------------------------------------------
 # Index Page starts --------------------------------
 --------------------------------------------------------------*/
-
+.welcome{
+  /* outline: 1px solid red; */
+  display: flex;
+}
 /*--------------------------------------------------------------
 # Workspace admins
 --------------------------------------------------------------*/
@@ -177,6 +315,7 @@ textarea {
 }
 .bi-plus{
   font-size: 600%;
+  color:  #444444;
 }
 .displayAdmin h3
 {
@@ -254,11 +393,14 @@ table tr td
 {
   padding: 10px;
 }
+.reportmodal table tr:hover,
 .ShowUsers table tr:hover
 {
   background:var(--dark-hover);
   color: white;
 }
+
+
 /*--------------------------------------------------------------
 # Index Page ends --------------------------------
 --------------------------------------------------------------*/
@@ -308,11 +450,11 @@ h6 {
     padding: 20px;
   }
 }
-.displayPic
+/* .displayPic
 {
   width: 20%;
 
-}
+} */
 .displayPic figure
 {
   width: 5rem;
@@ -327,13 +469,15 @@ h6 {
 
 }
 .message{
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   align-items: center;
+  margin: 20px;
 }
 .profile{
   width: 60%;
 }
+
 .displayPic figure i
 {
   color: rgb(252, 252, 252);

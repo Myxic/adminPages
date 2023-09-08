@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../StudentPageStyleSheet/Calender.css">
 </head>
 
 <body>
@@ -136,32 +137,9 @@
         </a>
       </li><!-- End General Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./settings.html">
-          <i class="bi bi-gear-fill"></i>
-          <span>Setting</span>
-        </a>
-      </li><!-- End Setting Nav -->
 
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bx bxs-grid-alt"></i><span>Pages</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="./Home.html">
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Gallery.html">
-              </i><span>Gallery</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="./Events.html">
@@ -172,12 +150,7 @@
 
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./Rent.html">
-          <i class="bi bi-cash-stack"></i>
-          <span>Rent</span>
-        </a>
-      </li><!-- End Setting Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link " href="./Reports.html">
@@ -188,28 +161,7 @@
 
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-people-fill"></i><span>Students</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="./Students/Active.html">
-              <span>Active</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Students/Update.html">
-              <span>Update</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Students/Records.html">
-              <span>Records</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
+
 
       <li class="nav-item signOut">
         <a class="nav-link collapsed" href="../Index.html">
@@ -232,24 +184,24 @@
         <div class="ReportItems">
           <figure>
             <img src="../assets/img/product-4.jpg" alt="" srcset="">
-         </figure>
-  
+          </figure>
+
           <p>Electrical</p>
-  
-          <p class="button">View</p>
+
+          <p class="button" id="viewElectricalreportModal">View</p>
         </div>
-        
+
       </div>
 
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="ReportItems">
           <figure>
             <img src="../assets/img/product-5.jpg" alt="" srcset="">
-         </figure>
-  
+          </figure>
+
           <p>Plumbing</p>
-  
-          <p class="button">View</p>
+
+          <p class="button" id="viewPlumbingReportModal">View</p>
         </div>
       </div>
 
@@ -257,11 +209,11 @@
         <div class="ReportItems">
           <figure>
             <img src="../assets/img/product-2.jpg" alt="" srcset="">
-         </figure>
-  
+          </figure>
+
           <p>Carpentry</p>
-  
-          <p class="button">View</p>
+
+          <p class="button" id="viewCarpentryReportModal">View</p>
         </div>
       </div>
 
@@ -269,11 +221,11 @@
         <div class="ReportItems">
           <figure>
             <img src="../assets/img/product-3.jpg" alt="" srcset="">
-         </figure>
-  
+          </figure>
+
           <p>Window</p>
-  
-          <p class="button">View</p>
+
+          <p class="button" id="viewWindowReportModal">View</p>
         </div>
       </div>
 
@@ -281,145 +233,202 @@
         <div class="ReportItems">
           <figure>
             <img src="../assets/img/product-1.jpg" alt="" srcset="">
-         </figure>
-  
+          </figure>
+
           <p>Others</p>
-  
-          <p class="button">View</p>
+
+          <p class="button" id="viewOthersReportModal">View</p>
         </div>
       </div>
 
 
     </div>
 
-    <dialog>
-      <div>
-        <h3>Window Issues</h3>
-        <table>
-          <tr>
-            <th></th>
-            <th>User</th>
-            <th>Room No</th>
-            <th>Issue</th>
-            <th></th>
-          </tr>
-
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td> Andrew Bojangles</td>
-            <td>C3/27</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
-            <td><img src="" alt="" srcset=""></td>
-          </tr>
-        </table>
-        <input type="button" value="Reset All">
-        <input type="button" value="Delete">
-      </div>
-      
-    </dialog>
-
-    <dialog>
-      <div>
+    <dialog id="ElectricalreportModal">
+      <div class="reportmodal">
         <h3>Electrical Issues</h3>
-        <table>
-          <tr>
-            <th></th>
-            <th>User</th>
-            <th>Room No</th>
-            <th>Issue</th>
-            <th></th>
-          </tr>
-
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td> Andrew Bojangles</td>
-            <td>C3/27</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
-            <td><img src="" alt="" srcset=""></td>
-          </tr>
-        </table>
-        <input type="button" value="Reset All">
-        <input type="button" value="Delete">
+        <p class="Xbutton" id="closeElectricalreportModal">X</p>
+        <div class="tablePacer">
+          <table>
+            <tr>
+              <th></th>
+              <th>User</th>
+              <th>Room No</th>
+              <th>Issue</th>
+              <th></th>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+          </table>
+        </div>
+       
+        <input type="button" value="Reset All" class="UpcomingEventButton Reset">
+        <input type="button" value="Delete" class="UpcomingEventButton Delete">
       </div>
       
-    </dialog> 
 
-    <dialog>
-      <div>
+    </dialog>
+
+    <dialog id="PlumbingReportModal">
+      <div class="reportmodal">
         <h3>Plumbing Issues</h3>
-        <table>
-          <tr>
-            <th></th>
-            <th>User</th>
-            <th>Room No</th>
-            <th>Issue</th>
-            <th></th>
-          </tr>
-
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td> Andrew Bojangles</td>
-            <td>C3/27</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
-            <td><img src="" alt="" srcset=""></td>
-          </tr>
-        </table>
-        <input type="button" value="Reset All">
-        <input type="button" value="Delete">
+        <p class="Xbutton" id="closePlumbingReportModal">X</p>
+        <div class="tablePacer">
+          <table>
+            <tr>
+              <th></th>
+              <th>User</th>
+              <th>Room No</th>
+              <th>Issue</th>
+              <th></th>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+          </table>
+        </div>
+        <input type="button" value="Reset All" class="UpcomingEventButton Reset">
+        <input type="button" value="Delete" class="UpcomingEventButton Delete">
       </div>
-      
+
     </dialog>
 
-    <dialog>
-      <div>
-        <h3>Carpentry Issues </h3>
-        <table>
-          <tr>
-            <th></th>
-            <th>User</th>
-            <th>Room No</th>
-            <th>Issue</th>
-            <th></th>
-          </tr>
-
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td> Andrew Bojangles</td>
-            <td>C3/27</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
-            <td><img src="" alt="" srcset=""></td>
-          </tr>
-        </table>
-        <input type="button" value="Reset All">
-        <input type="button" value="Delete">
+    <dialog id="CarpentryReportModal">
+      <div class="reportmodal">
+        <h3>Carpentry Issues</h3>
+        <p class="Xbutton" id="closeCarpentryReportModal">X</p>
+        <div class="tablePacer">
+          <table>
+            <tr>
+              <th></th>
+              <th>User</th>
+              <th>Room No</th>
+              <th>Issue</th>
+              <th></th>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+          </table>
+        </div>
+        <input type="button" value="Reset All" class="UpcomingEventButton Reset">
+        <input type="button" value="Delete" class="UpcomingEventButton Delete">
       </div>
-      
+
     </dialog>
 
-    <dialog>
-      <div>
-        <h3>Others Issues</h3>
-        <table>
-          <tr>
-            <th></th>
-            <th>User</th>
-            <th>Room No</th>
-            <th>Issue</th>
-            <th></th>
-          </tr>
-
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td> Andrew Bojangles</td>
-            <td>C3/27</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
-            <td><img src="" alt="" srcset=""></td>
-          </tr>
-        </table>
-        <input type="button" value="Reset All">
-        <input type="button" value="Delete">
+    <dialog id="WindowReportModal">
+      <div class="reportmodal">
+        <h3>Window Issues</h3>
+        <p class="Xbutton" id="closeWindowReportModal">X</p>
+        <div class="tablePacer">
+          <table>
+            <tr>
+              <th></th>
+              <th>User</th>
+              <th>Room No</th>
+              <th>Issue</th>
+              <th></th>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+          </table>
+        </div>
+        <input type="button" value="Reset All" class="UpcomingEventButton Reset">
+        <input type="button" value="Delete" class="UpcomingEventButton Delete">
       </div>
-      
+
+    </dialog>
+
+    <dialog id="OthersReportModal">
+      <div class="reportmodal">
+        <h3>Other Issues</h3>
+        <p class="Xbutton" id="closeOthersReportModal">X</p>
+        <div class="tablePacer">
+          <table>
+            <tr>
+              <th></th>
+              <th>User</th>
+              <th>Room No</th>
+              <th>Issue</th>
+              <th></th>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+  
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td> Andrew Bojangles</td>
+              <td>C3/27</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor eiusmod</td>
+              <td><img src="" alt="" srcset=""></td>
+            </tr>
+          </table>
+        </div>
+        <input type="button" value="Reset All" class="UpcomingEventButton Reset">
+        <input type="button" value="Delete" class="UpcomingEventButton Delete">
+      </div>
+
     </dialog>
 
   </main>
@@ -431,7 +440,9 @@
 
 
   <!-- Template Main JS File -->
+  <script src="../assets/js/variables.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/reports.js"></script>
 
 </body>
 

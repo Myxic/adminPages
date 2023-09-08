@@ -139,32 +139,10 @@
         </a>
       </li><!-- End General Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./AdminPages/settings.html">
-          <i class="bi bi-gear-fill"></i>
-          <span>Setting</span>
-        </a>
-      </li><!-- End Setting Nav -->
+     
 
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bx bxs-grid-alt"></i><span>Pages</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="./AdminPages/Home.html">
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="./AdminPages/Gallery.html">
-              </i><span>Gallery</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="./AdminPages/Events.html">
@@ -175,12 +153,7 @@
 
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./AdminPages/Rent.html">
-          <i class="bi bi-cash-stack"></i>
-          <span>Rent</span>
-        </a>
-      </li><!-- End Setting Nav -->
+     
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="./AdminPages/Reports.html">
@@ -191,28 +164,6 @@
 
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-people-fill"></i><span>Students</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="./Students/Active.html">
-              <span>Active</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Students/Update.html">
-              <span>Update</span>
-            </a>
-          </li>
-          <li>
-            <a href="./Students/Records.html">
-              <span>Records</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
 
       <li class="nav-item signOut">
         <a class="nav-link collapsed" href="../Index.html">
@@ -227,9 +178,9 @@
 
   <main id="main">
 
-    <div class="profile row gy-4">
+    <div class="welcome">
 
-      <div class="displayPic display-6 col-md-6 d-flex">
+      <div class="displayPic display-6 ">
 
         <figure>
 
@@ -251,7 +202,7 @@
       <h3>Workspace admins</h3>
 
       <div class="Admins row gy-4">
-        <div class="addAdmin col-xl-2 col-md-6  ">
+        <div class="addAdmin col-xl-2 col-md-6  "  id="addAdminModal">
 
           <i class="bi bi-plus"></i>
           <small>Add Admin</small>
@@ -313,7 +264,7 @@
     </div>
 
     <div class="ShowUsers">
-      <h3>Active Users</h3>
+      <h3>ADs Subcribers </h3>
 
       <table>
         <tr>
@@ -440,8 +391,10 @@
         </div>
         <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
 <!-- something here -->
-        
+
+        <a href="./AdminPages/Events.html">
           <i class="bi bi-plus"></i>
+        </a>
           
           <p>Add Event</p>
           
@@ -453,6 +406,25 @@
       </div>
     </div>
 
+    <dialog id="adminModal">
+   
+      <form action="" class="FormContent">
+        <h3>Add Admin</h3>
+        <label for="headerInput">Name</label>
+        <input type="text" placeholder="Enter Header" id="headerInput">
+        <label for="headerInput">Link for Profile Pic</label>
+        <input type="text" placeholder="Enter Header" id="headerInput">
+        <label for="headerInput">Title or Post</label>
+        <input type="text" placeholder="Enter Header" id="headerInput">
+        <input type="submit" class="formContentButton Save" value="Save">
+        <input type="button" class="formContentButton Cancel" id="closeAdminModal" value="Cancel">
+        
+      </form>
+    
+ 
+
+  </dialog>
+
   </main>
 
   <!-- Vendor JS Files -->
@@ -462,8 +434,10 @@
 
 
   <!-- Template Main JS File -->
+  <script src="./assets/js/variables.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../scripts/Calendar.js"></script>
+  <script src="./assets/js/general.js"></script>
 
 </body>
 
