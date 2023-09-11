@@ -9,11 +9,11 @@ textarea {
 .FormContent
 {
   width: 30%;
-  margin: auto;
+  margin:  auto;
   padding: 20px;
   border: 1px solid ;
   border-radius: 10px;
-  transform: translateY(20%);
+  transform: translateY(10%);
   background: #f8fbff;
 }
 @media (max-width: 768px) {
@@ -118,10 +118,17 @@ textarea {
     justify-content: center;
     align-content: center;
   }
+
   .comingEvent p {
-    overflow: auto;
+    overflow: hidden;
     height: 100px ;
+    
     /* color: #fff !important; */
+  }
+
+  .comingEvent .Xbutton{
+    overflow: none;
+    height: 20px;
   }
 
   .EventBox {
@@ -202,7 +209,8 @@ dialog{
   width: 100vw !important;
   height: 100vh;
   box-sizing: content-box;
-  background-color: rgb(245, 245, 240);
+  background-color: rgba(255, 255, 255,0.7);
+  /* background-color: rgb(245, 245, 240); */
 
 }
 
@@ -297,6 +305,15 @@ dialog{
   transform: translateY(50%) ;
 }
 
+.eventDetailsCollapse{
+  overflow: auto;
+  height: 300px;
+  text-align:left;
+  
+}
+#viewEventsModal .FormContent{
+  text-align: center;
+}
 
 
 /*--------------------------------------------------------------

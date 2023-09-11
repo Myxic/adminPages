@@ -209,37 +209,57 @@
               <button type="button" class="UpcomingEventButton setEvent" id="addEventModal">Set an Event</button>
           </div>
           <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
-              <h2>Upcoming Event</h2>
+            <p class="Xbutton">
+              X
+            </p>
+              <h2>Upcoming Event </h2>
               <h3>Hf Talent Hunt</h3>
               <small>02/11/22</small>
               <p>Enim fringilla ac, ac dui, aliquam a. Quam duis libero sed fringilla ac, ac dui,
                   aliquam blandit. Donec integer...</p>
-              <button type="button" class="UpcomingEventButton ">View</button>
+              <button type="button" class="UpcomingEventButton viewEventsModal" >View</button>
           </div>
           <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
-              <h2>Upcoming Event</h2>
-              <h3>Hf Week</h3>
+            <p class="Xbutton">
+              X
+            </p>
+              <h2>Upcoming Event 2</h2>
+              <h3>Hf Week3</h3>
               <small>02/11/22</small>
               <p>Enim fringilla ac, ac dui, aliquam a. Quam duis libero sed fringilla ac, ac dui,
                   aliquam blandit. Donec integer...</p>
-              <button type="button" class="UpcomingEventButton">View</button>
+                  <button type="button" class="UpcomingEventButton viewEventsModal" >View</button>
           </div>
 
           <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
-            <h2>Upcoming Event</h2>
-            <h3>Hf Week</h3>
+            <p class="Xbutton">
+              X
+            </p>
+            <h2>Upcoming Event 3</h2>
+            <h3>Hf Week2</h3>
             <small>02/11/22</small>
-            <p>Enim fringilla ac, ac dui, aliquam a. Quam duis libero sed fringilla ac, ac dui,
-                aliquam blandit. Donec integer...</p>
-            <button type="button" class="UpcomingEventButton">View</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus dolore non saepe, omnis veniam blanditiis, est ratione optio cupiditate dolorem quae nam consectetur temporibus in, quod iure minus voluptate.
+            Voluptate temporibus, sequi quae reprehenderit voluptatem repudiandae ipsam ex necessitatibus optio laudantium esse doloribus voluptatibus eius officiis nulla amet magni eveniet distinctio minus exercitationem expedita incidunt! Atque sunt laudantium debitis.
+            Iusto optio deserunt expedita, perferendis assumenda, voluptatibus nobis, vel reiciendis vitae architecto a veniam. Laborum est commodi harum, incidunt eaque blanditiis asperiores culpa, laudantium dolore quibusdam dolor soluta molestias suscipit.
+            Magnam voluptatibus et excepturi, blanditiis atque eligendi explicabo omnis amet earum odit veniam hic voluptate aspernatur maiores consectetur iste similique quod veritatis quasi mollitia. Quo numquam amet veniam non facilis?
+            Quibusdam voluptas alias aspernatur rem. Inventore laborum officiis culpa dolorum illum! Non iure corrupti excepturi enim ipsa aut sapiente consequatur ab in exercitationem saepe rem, repellat, explicabo tempore! Nam, cupiditate?
+            Dignissimos, iusto omnis, dicta libero sed vitae fuga dolorem autem laudantium voluptate recusandae possimus, enim laboriosam? Aperiam, quam tempora eius nobis in blanditiis possimus. Autem commodi ipsam dicta eius odit!
+            Quos consectetur enim quibusdam cum. Ab quae ad voluptas aperiam facilis molestiae id numquam tempore optio! Hic autem libero fugiat adipisci, dicta distinctio commodi obcaecati et fugit id. Ipsum, maiores!
+            Totam consequuntur distinctio aut animi quo velit, itaque rem non sunt voluptatem sint atque nostrum odio fugit molestias provident fuga facere temporibus consectetur, sapiente ab. Modi dolore exercitationem temporibus amet?
+            Nobis, facere. Sed molestias nisi, in quas et molestiae maxime eligendi dignissimos praesentium cumque dolore ullam eum enim tempora consequuntur laboriosam laudantium possimus est, voluptate dolores! Iure dignissimos molestiae neque!
+            Impedit, nam reprehenderit repellendus ex, deleniti hic sequi necessitatibus, molestiae officia at praesentium vel autem mollitia dignissimos? Nam aperiam ipsa, perferendis rerum cum enim doloribus, eos cupiditate, dolore distinctio velit?</p>
+                <button type="button" class="UpcomingEventButton viewEventsModal" >View</button>
         </div>
         <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
-          <h2>Upcoming Event</h2>
-          <h3>Hf Week</h3>
+          <p class="Xbutton">
+            X
+          </p>
+          <h2>Upcoming Event 4</h2>
+          <h3>Hf Week6</h3>
           <small>02/11/22</small>
           <p>Enim fringilla ac, ac dui, aliquam a. Quam duis libero sed fringilla ac, ac dui,
               aliquam blandit. Donec integer...</p>
-          <button type="button" class="UpcomingEventButton">View</button>
+              <button type="button" class="UpcomingEventButton viewEventsModal" >View</button>
       </div>
 
       <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
@@ -261,6 +281,8 @@
         <input type="date" name="setDate" id="setdate" >  
         <label for="headerInput">Heading</label>
         <input type="text" placeholder="Enter Header" id="headerInput">
+        <label for="subHeaderInput">Sub-Heading</label>
+        <input type="text" placeholder="Enter Sub-Heading" id="subHeaderInput">
         <label for="bodyDetail">Details</label>
         <textarea name="details" id="bodyDetail" cols="30" rows="10"></textarea>
 
@@ -291,6 +313,53 @@
       
     </form>
   
+
+
+</dialog>
+
+<dialog id="viewEventsModal">
+   
+  <div class="FormContent ">
+    <p class="Xbutton" id="closeEventsModal">
+      X
+    </p>
+    <h1>Upcoming Event</h1>
+    <h2>Hf Talent Hunt</h2>
+
+    <h4>02/11/22</h4>
+
+
+    <p class="eventDetailsCollapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam, numquam alias quas odit accusantium, dignissimos, recusandae debitis delectus quaerat eveniet veritatis quam modi. Tenetur quaerat est repellendus ipsa illo!
+    Fuga quidem blanditiis, nostrum architecto magnam molestiae recusandae a, cupiditate aspernatur voluptatum quas neque iusto ipsum accusamus, dicta tempora molestias ab! Voluptatum, perspiciatis sequi? Dolorum eligendi recusandae magnam assumenda aliquid!
+    Accusamus voluptate voluptatibus ex aliquam debitis autem error molestias eaque modi minus quo eum, vel alias ab, eius ullam reprehenderit dolorem maiores repellendus. Ullam quaerat voluptas quos commodi dolores. Minus.
+    Error neque labore minus odit ipsam vitae exercitationem ab magnam mollitia numquam obcaecati illum tenetur quam libero, dicta explicabo omnis, commodi accusantium laudantium provident. Quo et dignissimos modi. Fugit, repudiandae!
+    Numquam a id, quas natus delectus explicabo iusto excepturi, illum sed quo, assumenda non repellat. Dolore ipsam debitis fuga esse architecto, reprehenderit pariatur! Praesentium sapiente cupiditate ex dolorem aut quibusdam.
+    Eaque consequuntur adipisci excepturi porro quibusdam quia ullam cum quisquam ut, dolorem id iste incidunt debitis placeat voluptatibus asperiores officiis animi, tempore dicta! Aliquam in nulla non, iste distinctio esse.
+    Voluptate similique totam excepturi eligendi iure aliquid debitis ipsa illo nihil animi unde sed, asperiores fuga facilis saepe nemo consequatur voluptates recusandae architecto dolores! Minus eveniet ab blanditiis veritatis sapiente!
+    Modi deserunt suscipit quaerat repellendus unde, dicta quasi, voluptatem sapiente fugiat corrupti doloribus tempora architecto totam officia! Aperiam numquam, beatae, ipsum recusandae praesentium rerum accusamus quaerat iusto eos, nam culpa.
+    Labore nisi quas laudantium voluptate expedita quisquam illum tempora possimus in facere autem, alias suscipit corrupti, dignissimos quam tenetur cumque rem omnis beatae dolore vero, est excepturi inventore ab. Molestiae.
+    Sunt perferendis repellat incidunt molestias, placeat saepe est odit. Sint temporibus voluptatibus sequi, fugit laborum est officiis ex iure, quisquam necessitatibus corrupti? Minima reiciendis culpa quis nisi repellendus labore vero!
+    Quis sequi ipsam dignissimos reiciendis suscipit assumenda nulla odit doloribus, nam aliquam sint corrupti id facere non consectetur quisquam libero corporis tenetur minima velit illo eum. Quam minima cumque veniam?
+    Harum dignissimos sint ut debitis iure accusantium, tempore voluptatem. At ratione dolorum pariatur porro deserunt, iusto, amet recusandae consequuntur magni praesentium delectus quia, illo voluptatum quibusdam explicabo architecto nobis iste.
+    Iure ab odit harum veniam quasi, quidem eligendi accusamus quas non ex praesentium illum dolor enim nihil deleniti aliquam vero dolorum deserunt corrupti quisquam maiores, perspiciatis eum quia voluptatem. Quis!
+    Illum similique numquam aliquam facilis officiis optio cumque at tempora fugiat, neque unde error dicta qui modi maiores dolor porro voluptas. Totam adipisci et, perspiciatis nobis nulla sint atque maxime!
+    Ducimus atque exercitationem eaque est necessitatibus reiciendis quod laboriosam! Placeat, voluptas! Fuga, officiis unde expedita provident neque consectetur, explicabo, asperiores beatae delectus inventore temporibus eum assumenda itaque aspernatur cumque? Voluptatibus.
+    Omnis adipisci doloribus explicabo quasi, laborum recusandae voluptatem hic ex qui, id tenetur ipsam numquam vitae! Perferendis ab consectetur, placeat quibusdam blanditiis quaerat, commodi tempora reiciendis eos nihil, laborum consequuntur?
+    Quos nam exercitationem nostrum natus dolore odit unde vel, fuga aspernatur nihil consequuntur, veritatis incidunt harum quas. Voluptate dolores voluptatem laboriosam aperiam consequuntur, beatae minima quibusdam, vel alias facilis fuga!
+    Deserunt enim adipisci placeat cumque, quasi aliquam unde reiciendis, totam dolorem aut officiis quia atque laudantium itaque delectus ab modi asperiores aliquid nisi, quas omnis et earum excepturi? Labore, deleniti.
+    Sapiente dicta fugiat totam in odit quibusdam eius praesentium modi, harum ex quis ea veritatis illum impedit quasi obcaecati sequi consequuntur, facere consequatur itaque minima odio repellendus assumenda? Consequatur, vel.
+    Ullam illum possimus officiis sapiente accusantium modi beatae numquam aperiam aliquid porro dolorum molestias assumenda sunt labore, dicta, quaerat id quam nostrum ipsa quidem qui omnis? Autem laboriosam fugiat harum!
+    Corporis beatae deserunt voluptatibus temporibus dolorem! Tempora similique et labore sint numquam architecto reprehenderit officia dignissimos animi quae, aperiam sit maiores rem saepe ullam esse excepturi, alias consequatur quasi neque.
+    Ut, facere earum provident blanditiis ipsum veniam eveniet aut vel iure dolorum temporibus quisquam! Quas, itaque! Dolore maxime tempora corrupti officiis vitae iste nemo qui, cumque ad? Nulla, cumque incidunt.
+    Dolor neque velit eum, aliquam atque excepturi quia nihil fugiat hic nesciunt voluptas dolore officiis id expedita vitae a molestiae commodi facilis quisquam veniam enim libero? Nihil repudiandae dolorem hic.
+    Quidem earum suscipit perferendis neque, consequuntur architecto quasi sequi minus delectus vitae dicta. Tempora aperiam dolores mollitia aliquam minus ab enim possimus sed laudantium itaque porro quidem obcaecati, corrupti ipsam.
+    Maiores obcaecati eaque, itaque libero iste deserunt sint, similique dicta nisi, numquam expedita quae eius in illum possimus totam culpa praesentium quibusdam sequi? Voluptas, quo omnis harum possimus reiciendis repudiandae.</p>
+
+    
+    <button type="button" class="UpcomingEventButton">Delete</button>
+    
+  </div>
+
 
 
 </dialog>

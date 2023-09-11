@@ -1,5 +1,7 @@
 const addEventModal = document.querySelector('#addEventModal');
 
+const viewEventButton = document.querySelector('#viewEventButton');
+
 const addADModal = document.querySelector('#addADModal');
 
 const addAdminModal = document.querySelector('#addAdminModal');
@@ -38,7 +40,9 @@ const openSettingsModal = document.querySelector('#openSettingsModal');
 
 const closeSettingsModal = document.querySelector('#closeSettingsModal');
 
-const viewEventsModal = document.querySelectorAll('#viewEventsModal');
+const viewEventButtons = document.querySelectorAll('.viewEventsModal');
+
+// const viewEventsModal = document.querySelector('#viewEventsModal');
 
 const closeEventsModal = document.querySelector('#closeEventsModal');
 
