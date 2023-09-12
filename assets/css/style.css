@@ -330,10 +330,18 @@ dialog{
   /* width: 100%; */
   margin: 20px auto;
 }
-.bi-plus{
+.bi-plus,
+.bi-mic-fill,
+.bi-calendar-event{
   font-size: 600%;
   color:  #444444;
+  
 }
+.bi-mic-fill:hover,
+.bi-calendar-event:hover{
+  color: #BF4E03;
+}
+
 .displayAdmin h3
 {
   margin: 30px 0px;
