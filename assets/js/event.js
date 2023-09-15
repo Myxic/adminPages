@@ -1,3 +1,5 @@
+viewEvent();
+
 addEventModal.addEventListener("click", ()=> {
     eventsModal.showModal();
 });
@@ -12,7 +14,7 @@ closeADmodel.addEventListener("click", ()=> {
     adModel.close();
 
 });
-viewEvent();
+
 
 
 // viewEventButton.addEventListener("click", ()=> {
@@ -28,7 +30,7 @@ function viewEvent() {
         
         console.log("inside");
 
-        viewEventButton.onclick = () => { viewEventsModal.showModal();};
+        // viewEventButton.onclick = () => { viewEventsModal.showModal();};
        
         viewEventButton.addEventListener("click", ()=> {
             // code for the modal click

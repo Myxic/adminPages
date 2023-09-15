@@ -1,4 +1,13 @@
 /* personal changes */
+
+#profilepic{
+  display: none;
+
+}
+.profilesection{
+  width: 90% !important;
+  margin: auto;
+}
 .nav-item.signOut {
   position: absolute;
   bottom: 0;
@@ -246,7 +255,10 @@ dialog{
   padding: 10px;
   
 }
-
+.makeAnnouncementFormContent
+{
+  transform: translateY(50%);
+}
 
 
 .reportmodal input[type="button"]{
@@ -350,7 +362,11 @@ dialog{
 .addAdmin{
   text-align: center;
   position: relative;
+ 
 
+}
+#addAdminModal{
+  cursor: pointer;
 }
 .addAdmin figure
 {
@@ -491,6 +507,7 @@ h6 {
   border: 1px solid #b7d8f5;
   background-color: #b7d8f5;
   border-radius: 50%;
+ 
 
 }
 .message{
@@ -523,6 +540,7 @@ h6 {
     padding: 20px;
     
     height: 253px;
+    
 }
 .Admins > *:hover
 {
