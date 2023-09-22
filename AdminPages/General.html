@@ -82,7 +82,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="AdminProfile.html">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -140,7 +140,7 @@
         </a>
       </li><!-- End General Nav -->
 
-     
+
 
 
 
@@ -154,7 +154,7 @@
 
 
 
-     
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="../AdminPages/Reports.html">
@@ -162,6 +162,15 @@
           <span>Report</span>
         </a>
       </li><!-- End Setting Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./AdminProfile.html">
+          <i class="bi bi-person-fill"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Setting Nav -->
+
+
 
 
 
@@ -182,12 +191,15 @@
     <div class="welcome">
 
       <div class="displayPic display-6 ">
+        <label for="profilepic">
+          <figure>
 
-        <figure>
+            <i class="bi bi-camera"></i>
 
-          <i class="bi bi-camera"></i>
-          
-        </figure>
+          </figure>
+        </label>
+
+        <input type="file" name="profilepic" id="profilepic">
       </div>
 
       <div class="message  col-md-6 ">
@@ -203,7 +215,7 @@
       <h3>Workspace admins</h3>
 
       <div class="Admins row gy-4">
-        <div class="addAdmin col-xl-2 col-md-6  "  id="addAdminModal">
+        <div class="addAdmin col-xl-2 col-md-6  " id="addAdminModal">
 
           <i class="bi bi-plus"></i>
           <small>Add Admin</small>
@@ -309,7 +321,7 @@
           </td>
           <td>
             C3/21
-          </th>
+            </th>
           <td>
             Electrical Enginneering
           </td>
@@ -320,7 +332,7 @@
             :
           </td>
         </tr>
-       <tr>
+        <tr>
           <td>
             <input type="checkbox" name="Select" id="SelectUser">
           </td>
@@ -335,7 +347,7 @@
           </td>
           <td>
             C3/21
-          </th>
+            </th>
           <td>
             Electrical Enginneering
           </td>
@@ -380,35 +392,35 @@
           </div>
           <div class="month-list"></div>
 
-          
-        </div>
-        <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
-            <a href="">
-                <i class="bi bi-mic-fill"></i>
-              </a>
-                
-                <p>Make Announcement</p>
-                 
-        </div>
-        <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
-<!-- something here -->
 
-        <a href="../AdminPages/Events.html">
-          <i class="bi bi-calendar-event"></i>
-        </a>
-          
+        </div>
+        <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
+          <span id="makeAnnouncement">
+            <i class="bi bi-mic-fill"></i>
+          </span>
+
+          <p>Make Announcement</p>
+
+        </div>
+        <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
+          <!-- something here -->
+
+          <a href="../AdminPages/Events.html">
+            <i class="bi bi-calendar-event"></i>
+          </a>
+
           <p>Add Event</p>
-          
-          
+
+
         </div>
 
-        
+
 
       </div>
     </div>
 
     <dialog id="adminModal">
-   
+
       <form action="" class="FormContent">
         <h3>Add Admin</h3>
         <label for="headerInput">Name</label>
@@ -419,12 +431,30 @@
         <input type="text" placeholder="Enter Header" id="headerInput">
         <input type="submit" class="formContentButton Save" value="Save">
         <input type="button" class="formContentButton Cancel" id="closeAdminModal" value="Cancel">
-        
-      </form>
-    
- 
 
-  </dialog>
+      </form>
+
+
+
+    </dialog>
+
+    <dialog id="announcementModal">
+
+      <form action="" class="FormContent makeAnnouncementFormContent">
+        <h3>Make Announcement</h3>
+        <label for="headerInput">Topic</label>
+        <input type="text" placeholder="Enter Topic" id="headerInput">
+        <label for="headerInput">Details</label>
+        <input type="text" placeholder="Enter Details" id="headerInput">
+
+        <input type="submit" class="formContentButton Save" value="Save">
+        <input type="button" class="formContentButton Cancel" id="closeAnnouncementModal" value="Cancel">
+
+      </form>
+
+
+
+    </dialog>
 
   </main>
 
@@ -443,4 +473,3 @@
 </body>
 
 </html>
-

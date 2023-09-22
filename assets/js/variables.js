@@ -78,3 +78,9 @@ const addEventButton = document.querySelector('#addEventButton');
 
 const removeEventButton = document.querySelector('#removeEventButton');
 
+const makeAnnouncement = document.querySelector('#makeAnnouncement');
+
+const announcementModal = document.querySelector('#announcementModal');
+
+const closeAnnouncementModal = document.querySelector('#closeAnnouncementModal');
+
