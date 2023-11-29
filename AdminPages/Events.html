@@ -148,9 +148,6 @@
           <span>Event</span>
         </a>
       </li><!-- End Setting Nav --> 
-
-    
-
       
 
       <li class="nav-item">
@@ -159,6 +156,15 @@
           <span>Report</span>
         </a>
       </li><!-- End Setting Nav --> 
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./Rooms.html">
+          <i class="bi bi-door-open-fill"></i>
+          <span>Rooms</span>
+        </a>
+      </li><!-- End Setting Nav --> 
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="./AdminProfile.html">
@@ -174,7 +180,7 @@
 
       <li class="nav-item signOut" >
         <a class="nav-link collapsed" href="../Index.html">
-          <i class="bi bi-box-arrow-in-right"></i>
+          <i class="bi bi-box-arrow-in-left"></i>
           <span>Sign out</span>
         </a>
       </li><!-- End Blank Page Nav -->
@@ -259,6 +265,8 @@
             Impedit, nam reprehenderit repellendus ex, deleniti hic sequi necessitatibus, molestiae officia at praesentium vel autem mollitia dignissimos? Nam aperiam ipsa, perferendis rerum cum enim doloribus, eos cupiditate, dolore distinctio velit?</p>
                 <button type="button" class="UpcomingEventButton viewEventsModal" >View</button>
         </div>
+
+
         <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
           <p class="Xbutton">
             X
@@ -270,6 +278,7 @@
               aliquam blandit. Donec integer...</p>
               <button type="button" class="UpcomingEventButton viewEventsModal" >View</button>
       </div>
+      
 
       <div class="UpcomingEvent comingEvent col-xl-4 col-md-6 ">
         
@@ -307,13 +316,13 @@
   <dialog id="adModel">
    
     <form action="" class="FormContent AD">
-      <h3>Add Events</h3>
-      <label for="setdate">Set Date Duration</label>
+      <h3>Add Adverts</h3>
+      <label for="setdate">Set Duration</label>
       <input type="date" name="setDate" id="setdate" >  
-      <label for="headerInput">AD Heading</label>
+      <label for="headerInput">Advert Heading</label>
       <input type="text" placeholder="Enter Header" id="headerInput">
-      <label for="ADImg"></label>
-      <input type="text" name="img" id="ADImg" placeholder="Link for Image">
+      <label for="ADImg">Image</label>
+      <input type="file" name="img" id="ADImg" >
       <label for="bodyDetail">Details</label>
       <textarea name="details" id="bodyDetail" cols="30" rows="10"></textarea>
 

@@ -20,7 +20,7 @@ textarea {
   width: 30%;
   margin:  auto;
   padding: 20px;
-  border: 1px solid ;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   transform: translateY(10%);
   background: #f8fbff;
@@ -1735,4 +1735,93 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# ROOMS
+--------------------------------------------------------------*/
+
+
+
+.building-header{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    
+    margin: 30px !important;
+    
+}
+.floor-picker{
+  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 30px;
+}
+.floor-picker > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.floor-rooms{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    /* gap: 20px; */
+    justify-items:center;
+    align-items:center;
+    color: white;
+}
+.floor-rooms > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+.floor-rooms > *:hover{
+    outline: 4px solid rgba(174, 204, 41, 0.707);
+}
+pre{
+    cursor: pointer;
+}
+#floor{
+    cursor: default;
+}
+section{
+    margin-bottom: 30px;
+}
+.switch-building{
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+.switch-building > a{
+    /* display: block; */
+    width: 100%;
+}
+.register{
+    width: 50% !important;
+    margin: 20px auto;
+}
+
+.search-room{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  text-align: center;
+  gap: 20px;
+}
+.search-room > *{
+  margin: 0 !important;
+  padding: 10px;
 }
