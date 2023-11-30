@@ -293,10 +293,10 @@ dialog{
 
 
   .tablePacer{
-    max-height: 60vh;
+    max-height: 400px;
     overflow-y: auto;
   }
-
+  .smart-table  tr,
   .reportmodal table tr{
     display: flex;
     flex-direction: column;
@@ -408,7 +408,7 @@ dialog{
   text-align: center;
  background-color: var(--light-hover);
  border-radius: 7px;
-  height: 30vh;
+  height: 270px;
   overflow-y: auto;
   margin: 10px auto;
 }
@@ -1807,7 +1807,7 @@ section{
     flex-wrap: nowrap;
 }
 .switch-building > a{
-    /* display: block; */
+ 
     width: 100%;
 }
 .register{
@@ -1824,4 +1824,24 @@ section{
 .search-room > *{
   margin: 0 !important;
   padding: 10px;
+}
+
+.rooms-setting{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+@media (max-width: 690px) {
+  .register{
+    width: 80% !important;
+  }
+  .switch-building{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+  .rooms-setting{
+    padding: 20px;
+  }
 }

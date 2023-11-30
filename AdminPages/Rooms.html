@@ -204,11 +204,14 @@
     </section>
     <section>
       
-      <div class="ShowUsers">
+      <div class="ShowUsers tablePacer">
           <h3> Occupant Details </h3>
     
-          <table>
+          <table class="smart-table">
             <tr>
+              <th>
+                Select
+              </th>
               <th>
                 Names
               </th>
@@ -226,7 +229,7 @@
               
             </tr>
             <tr>
-             
+              <td><input type="checkbox" name="" id=""></td>
               <td>
                 Andrew Tate
               </td>
@@ -245,7 +248,7 @@
               
             </tr>
             <tr>
-            
+              <td><input type="checkbox" name="" id=""></td>
               <td>
                 Andrew Tate
               </td>
@@ -266,21 +269,27 @@
               
             </tr>
           </table>
-          
+    
+          <input type="button" value="Delete" class="UpcomingEventButton Delete">
         </div>
        
   </section>
   
     <section>
-
-      <div class="switch-building">
+      <div class="ShowUsers rooms-setting">
+        <h3>View Buildings</h3>
+      <div class="switch-building ">
+          
           <a href="./Rooms/ABlock.html"><button class="UpcomingEventButton"> A-Block</button></a>
           <a href="./Rooms/BBlock.html"><button class="UpcomingEventButton"> B-Block</button></a>
           <a href="./Rooms/CBlock.html"><button class="UpcomingEventButton"> C-Block</button></a>
           <a href="./Rooms/DBlock.html"><button class="UpcomingEventButton"> D-Block</button></a>
       </div>
-      <div class="register">
-        <a href="../Register.html"><button class="UpcomingEventButton "> Register a new roommate</button></a>
+      </div>
+      
+      <div class="ShowUsers rooms-setting">
+        <h3>Register New Occupant</h3>
+        <a href="../Register.html"><button class="UpcomingEventButton register"> Register a new roommate</button></a>
      </div>
   </section>
  
