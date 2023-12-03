@@ -25,7 +25,7 @@
     text-align: center;
     padding: 40px 0px; 
     border-radius: 20px;
-
+    position: relative;
     background: rgba(255, 255, 255, .7);
     box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
 }
@@ -37,6 +37,7 @@
     text-align: left;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .login-1{
@@ -71,8 +72,9 @@
     margin-bottom: 10px;
     margin-top: 30px;
 }
-
+.forgot,
 .forgot >a{
+    background-color: #963d02;
     color: black;
     font-size: .7rem;
     text-transform: capitalize;
@@ -94,7 +96,25 @@ button{
     border: none;
     cursor: pointer;
 }
+button:hover{
+    background-color: #963d02; 
+}
 
+.return{
+    position: absolute;
+    min-width: 30px;
+    width: 50px;
+    padding: .7em;
+    left: 0px;
+    top: 0px;
+    border-radius: 7px 0px 0px 0px;
+   
+}
+.bi-arrow-left{
+    color: black;
+    font-size: 1.3em;
+   
+}
 
 
 
@@ -103,9 +123,9 @@ button{
     padding-top: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .formcontainer{
-        width: 65%;
+        width: 80%;
     }
     .login-1{
         font-size: 23px;
@@ -127,7 +147,7 @@ button{
 
 @media (max-width: 500px) {
     .formcontainer{
-        width: 80%;
+        width: 98%;
     } 
     .login-1{
         font-size: 18px;

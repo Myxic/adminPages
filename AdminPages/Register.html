@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration page</title>
-  
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="../StudentPageStyleSheet/style.css">
 </head>
 
@@ -16,20 +16,39 @@
 
     <div class="container">
         <div class="formcontainer">
+            <button class="return"><a href="./General.html"><i class="bi bi-arrow-left"></i></a></button>
             <span class="login-1">CREATE ACCOUNT</span>
+            
+            
             <form class="form create">
                 <input type="text" class="input" placeholder="First name" required>
                 <input type="text" class="input" placeholder="Last name" required>
                 <input type="email" class="input NoCap" placeholder="Email address" required>
                 <input type="number" class="input" placeholder="Phone no" required>
                 <input type="text" class="input" placeholder="Department" required>
-                <input type="text" class="input NoCap" placeholder="Id No" required>
+                
+                <select name="SelectBlock" id="" class="input" >
+                    <option value="">Select Block</option>
+                    <option value="A-Block">A Block</option>
+                    <option value="B-Block">B Block</option>
+                    <option value="C-Block">C Block</option>
+                    <option value="D-Block">D Block</option>
+                </select>
+                
+                <select name="SelectFloor" id="" class="input">
+                    <option value="">Select Floor</option>
+                    <option value="Floor1">1st Floor</option>
+                    <option value="Floor2">2nd Floor</option>
+                    <option value="Floor3">3rd Floor</option>
+                    <option value="Floor4">4th Floor</option>
+                </select>
+                <input type="text" class="input NoCap" placeholder="Room Number eg: 23" required>
                 <input type="password" class="input NoCap" placeholder="Enter Password" required>
                 <input type="password" class="input NoCap" placeholder="Confirm Password" required>
                 <button type="submit">Register</button>
             </form>
-
-            <span class="forgot"><a href="../index.html">Already have an account</a></span>
+            <span class="forgot" id="message"></span>
+            
         </div>
     </div>
 
