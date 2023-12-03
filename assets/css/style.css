@@ -1750,7 +1750,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
 }
-h2{
+.building-header >  h2{
     
     margin: 30px !important;
     
@@ -1832,6 +1832,13 @@ section{
   justify-content: center;
  
 }
+.ShowUsers > h3{
+  padding: 10px;
+  position: sticky;
+  top: -10px;
+  background-color: var(--light-hover);
+
+}
 
 @media (max-width: 690px) {
   .register{
@@ -1842,6 +1849,10 @@ section{
     grid-template-columns: repeat(2,1fr);
     
   }
+  .download-option{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .rooms-setting{
     padding: 20px;
   }
@@ -1849,7 +1860,11 @@ section{
 
     grid-template-columns: repeat(7,1fr);
   }
- 
+  .building-header >  h2{
+    
+    margin: 20px !important;
+    
+}
 }
 @media (max-width: 570px) {
   .floor-rooms{
@@ -1861,4 +1876,9 @@ section{
   .floor-rooms > *{
     margin: 10px;
   }
+  .building-header >  h2{
+    
+    margin: 10px !important;
+    
+}
 }
